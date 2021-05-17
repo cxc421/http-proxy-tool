@@ -1,0 +1,27 @@
+{
+  "name": "http-proxy-server",
+  "version": "1.0.0",
+  "description": "HTTP Proxy Server with CLI Interface",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "prebuild": "tsc",
+    "build": "nexe -t windows-x64-12.16.3 -o build/http-proxy-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "express": "^4.17.1",
+    "http-proxy-middleware": "^2.0.0",
+    "inquirer": "^8.0.0",
+    "validator": "^13.6.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.11",
+    "@types/inquirer": "^7.3.1",
+    "@types/node": "^15.3.0",
+    "@types/validator": "^13.1.3"
+  }
+}
